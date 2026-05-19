@@ -11,12 +11,12 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILLS_DIR="${HOME}/.claude/skills/anti-hallucination"
 COMMANDS_DIR="${HOME}/.claude/commands"
 
-mkdir -p "${SKILLS_DIR}" "${COMMANDS_DIR}"
+mkdir -p "${SKILLS_DIR}/docs" "${COMMANDS_DIR}"
 
 # Copy skill files (SKILL.md is the entrypoint Claude Code reads)
 cp "${REPO_DIR}/SKILL.md" "${SKILLS_DIR}/SKILL.md"
 cp "${REPO_DIR}/README.md" "${SKILLS_DIR}/README.md"
-cp -r "${REPO_DIR}/docs" "${SKILLS_DIR}/docs"
+cp -r "${REPO_DIR}/docs/." "${SKILLS_DIR}/docs/"
 
 # Install the slash command
 cp "${REPO_DIR}/commands/hallucination-check.md" "${COMMANDS_DIR}/hallucination-check.md"
