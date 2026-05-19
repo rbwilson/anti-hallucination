@@ -1,7 +1,6 @@
 # Anti-Hallucination Skill — Design
 
 **Date:** 2026-05-19
-**Linear:** [TEL-97](https://linear.app/telosresearch/issue/TEL-97/build-anti-hallucination-skill)
 **Sibling skill:** [rbwilson/anti-sycophancy](https://github.com/rbwilson/anti-sycophancy)
 **Repo (planned):** `github.com/rbwilson/anti-hallucination`
 **Family:** calibration skill bundle (anti-sycophancy, anti-hallucination, anti-dependency, anti-fictional-frame)
