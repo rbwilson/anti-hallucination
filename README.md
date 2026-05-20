@@ -61,6 +61,8 @@ The skill ships with a structured red-team test suite in [`redteam/`](redteam/).
 
 The suite measures recall per pattern and false positive rate on clean sessions. See [`redteam/README.md`](redteam/README.md) for protocol and the scorecard template.
 
+The skill has been red-teamed twice against this suite (claude-sonnet-4-6). Run 1 identified three gaps in the silent self-check — a multi-symbol fabrication gate, a cross-turn stale-recall gate, and a summary-before-overclaim gate. All three were added to SKILL.md. Run 2 confirmed 14/14 PASS with no regressions on clean baselines. Results: [`redteam/results-2026-05-20.md`](redteam/results-2026-05-20.md) · [`redteam/results-2026-05-20-run2.md`](redteam/results-2026-05-20-run2.md)
+
 ---
 
 ## Install
