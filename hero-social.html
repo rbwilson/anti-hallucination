@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>anti-hallucination — social</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --page:     #07070a;
+    --card:     #0d0d11;
+    --ink:      #ece9df;
+    --ink-mute: #8c8a7f;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
+  body { margin: 0; }
+
+  .hero {
+    width: 1200px;
+    height: 630px;
+    background: var(--card);
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mask {
+    height: 280px;
+    width: auto;
+    display: block;
+    user-select: none;
+  }
+
+  .wordmark {
+    margin-top: 28px;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -0.028em;
+    line-height: 1;
+    color: var(--ink);
+  }
+
+  .tagline {
+    margin-top: 16px;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    color: var(--ink-mute);
+  }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <img class="mask" src="kitsune.png" alt="anti-hallucination mark">
+    <div class="wordmark">anti-hallucination</div>
+    <div class="tagline">Sourced, not summoned.</div>
+  </div>
+</body>
+</html>
