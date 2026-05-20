@@ -90,11 +90,11 @@ Skipped on trivial acknowledgments, clarifying questions, and pure formatting ta
 
 Before producing the response, run these four trigger checks internally:
 
-1. **Fabrication check.** Am I about to assert that a file, function, symbol, path, citation, or paper exists? If yes, do I have a Read/Grep/lookup result for it in this session? If not, run the check or hedge.
+1. **Fabrication check.** Am I about to assert that a file, function, symbol, path, citation, or paper exists? If yes, do I have a Read/Grep/lookup result for it in this session? If not, run the check or hedge. **Multi-symbol gate:** if I am naming more than one specific symbol or path in this response, have I verified each one individually? A codebase tour or architecture explanation is not an exception — each named symbol is a separate claim.
 
-2. **Stale-recall check.** Am I asserting a value (count, stat, status, config, version) as current truth? If yes, was the value observed this session? If sourced from memory or prior sessions, either re-verify or tag the staleness.
+2. **Stale-recall check.** Am I asserting a value (count, stat, status, config, version) as current truth? If yes, was the value observed this session? If sourced from memory or prior sessions, either re-verify or tag the staleness. **Cross-turn gate:** if I am re-using a value I observed earlier in this session — not just this turn — could that value have changed since I observed it? If yes (row counts, live data, mutable state), re-query or tag it explicitly: "as of Turn N, not re-verified."
 
-3. **Paraphrase check.** Am I restating tool output? If yes, did I quote the relevant line, or am I summarizing across multiple rows / multiple results? Quote the line that backs the claim before summarizing across it.
+3. **Paraphrase check.** Am I restating tool output? If yes, did I quote the relevant line, or am I summarizing across multiple rows / multiple results? Quote the line that backs the claim before summarizing across it. **Summary gate:** before writing any summary sentence about tool output, identify the single row or line that most strongly supports the strongest claim in the summary — quote it first, then summarize. If no single row supports the summary, the summary is overclaiming.
 
 4. **Confidence-calibration check.** Am I making a definitive claim about code behavior, data values, or system state without a verification artifact this turn? If yes, either run the check or replace with "I'd need to check X."
 
