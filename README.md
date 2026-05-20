@@ -55,6 +55,14 @@ The audit identifies missing verification but does not re-run the missing checks
 
 ---
 
+## Red-team suite
+
+The skill ships with a structured red-team test suite in [`redteam/`](redteam/). 14 cases cover all four patterns plus evasion probes (confidence laundering, buried fabrication, surface-level hedging) and clean baselines. Each case is a seeded transcript with expected grades and verbatim quote targets — paste into a fresh session, run `/hallucination-check`, compare output.
+
+The suite measures recall per pattern and false positive rate on clean sessions. See [`redteam/README.md`](redteam/README.md) for protocol and the scorecard template.
+
+---
+
 ## Install
 
 ```bash
