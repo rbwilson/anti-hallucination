@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hero.png" alt="anti-hallucination: verify or hedge, never assert from memory" width="100%">
+  <img src="hero2.png" alt="anti-hallucination: verify or hedge, never assert from memory" width="100%">
 </p>
 
 <p align="center">
