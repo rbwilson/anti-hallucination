@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hero.png" alt="anti-hallucination — verify or hedge, never assert from memory" width="100%">
+  <img src="hero.png" alt="anti-hallucination: verify or hedge, never assert from memory" width="100%">
 </p>
 
 <p align="center">
@@ -21,9 +21,9 @@
 
 ## The problem
 
-Modern LLMs are trained to sound confident. The result is a measurable failure pattern: Claude asserts a file path that doesn't exist, cites a statistic that doesn't match the data, summarizes a multi-row DB result in a way that subtly changes the answer. These aren't bugs — they're the default behavior when verification is optional.
+Modern LLMs are trained to sound confident. The result is a measurable failure pattern: Claude asserts a file path that doesn't exist, cites a statistic that doesn't match the data, summarizes a multi-row DB result in a way that subtly changes the answer. These aren't bugs; they're the default behavior when verification is optional.
 
-The fix isn't "verify everything." That's paralysis. The fix is **verify or hedge — never assert from memory.** Run the check when verification is easy. Tag the staleness when relying on memory. Say "I'd need to check X" when the answer requires a check you haven't run.
+The fix isn't "verify everything." That's paralysis. The fix is **verify or hedge, never assert from memory.** Run the check when verification is easy. Tag the staleness when relying on memory. Say "I'd need to check X" when the answer requires a check you haven't run.
 
 This skill catches four specific hallucination patterns before they ship, and provides an on-demand audit to grade how often Claude grounded its claims.
 
@@ -37,7 +37,7 @@ This skill catches four specific hallucination patterns before they ship, and pr
 
 3. **Tool-output paraphrase drift.** Restating tool output in a way that subtly changes the value, count, direction, or scope. Most often happens when summarizing across multiple rows.
 
-4. **Unhedged confidence on uncertain claims.** Definitive factual or numerical statements with no verification artifact in the turn — "this function returns X" without grep/read, "the table has N rows" without a count query.
+4. **Unhedged confidence on uncertain claims.** Definitive factual or numerical statements with no verification artifact in the turn: "this function returns X" without grep/read, "the table has N rows" without a count query.
 
 Each pattern has a clear trigger, a clear "not this" case, and a tell. Full definitions in [SKILL.md](SKILL.md).
 
@@ -47,7 +47,7 @@ Each pattern has a clear trigger, a clear "not this" case, and a tell. Full defi
 
 Two modes.
 
-**Silent self-check.** Runs before substantive responses — claims about code/data/state, recommendations, reversals, completion reports. Four trigger questions plus a closing calibration. The user sees a normal response filtered through the heuristic. No ritual phrases.
+**Silent self-check.** Runs before substantive responses: claims about code/data/state, recommendations, reversals, completion reports. Four trigger questions plus a closing calibration. The user sees a normal response filtered through the heuristic. No ritual phrases.
 
 **On-demand audit (`/hallucination-check`).** Grades each of the four patterns CLEAN/YELLOW/RED with verbatim transcript quotes and named missing verification artifacts. Self-corrections (assert then verify in the same turn) grade CLEAN, not YELLOW.
 
@@ -90,4 +90,4 @@ The skills share a structure (silent self-check + on-demand audit, verbatim-quot
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
