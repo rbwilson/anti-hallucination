@@ -1,8 +1,8 @@
 # Anti-Hallucination Skill — Design
 
 **Date:** 2026-05-19
-**Sibling skill:** [rbwilson/anti-sycophancy](https://github.com/rbwilson/anti-sycophancy)
-**Repo (planned):** `github.com/rbwilson/anti-hallucination`
+**Sibling skill:** [Telos-evals/anti-sycophancy](https://github.com/Telos-evals/anti-sycophancy)
+**Repo (planned):** `github.com/Telos-evals/anti-hallucination`
 **Family:** calibration skill bundle (anti-sycophancy, anti-hallucination, anti-dependency, anti-fictional-frame)
 
 ---
@@ -150,7 +150,7 @@ self-check from ~/.claude/skills/anti-hallucination/SKILL.md.
 └── hero.html, hero.png, social-preview.png   # marketing imagery (parallel to anti-sycophancy)
 ```
 
-GitHub remote: `github.com/rbwilson/anti-hallucination`, public, MIT-licensed.
+GitHub remote: `github.com/Telos-evals/anti-hallucination`, public, MIT-licensed.
 
 ## 6. Memory cleanup
 
@@ -190,7 +190,7 @@ None at design time. The four-pattern taxonomy, the verify-or-hedge contract, th
 1. User reviews this spec.
 2. Invoke `superpowers:writing-plans` to produce the implementation plan.
 3. Build the repo (scaffold from anti-sycophancy), write SKILL.md, write the slash command, write install.sh, generate hero imagery.
-4. Push to `github.com/rbwilson/anti-hallucination`.
+4. Push to `github.com/Telos-evals/anti-hallucination`.
 5. Run `install.sh` locally.
 6. Append CLAUDE.md snippet.
 7. Cross-link the three driving memories.
