@@ -17,6 +17,10 @@
   <a href="docs/design.md">Design notes</a>
 </p>
 
+<p align="center">
+  Built by <a href="https://github.com/rbwilson">Ryan Wilson</a>
+</p>
+
 ---
 
 ## The problem
